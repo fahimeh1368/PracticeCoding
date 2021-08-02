@@ -27,7 +27,24 @@ namespace Practice_Algorithm
             {
                 Console.Write(left[i]+" ");
             }
-            var y = 0;
+
+
+            // test reverse string
+            char[] st = new char[] { 's', 'a', 'l', 'a', 'm' };
+            Console.WriteLine("\n String is : " );
+            for (int i = 0; i < st.Length; i++)
+            {
+                Console.Write(st[i] + " ");
+            }
+            
+            var reverse = new ReverseString();
+            reverse.Reverse(st);
+            Console.WriteLine("\n String after reverse is : ");
+            for (int i = 0; i<st.Length; i++)
+            {
+                Console.Write(st[i] + " ");
+            }
+            int y = 0;
         }
 
     }
