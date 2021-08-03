@@ -44,7 +44,29 @@ namespace Practice_Algorithm
             {
                 Console.Write(st[i] + " ");
             }
-            int y = 0;
+            Console.WriteLine("\n Array after remove duplicate is : ");
+            int[] nums = new int[] { 1,1,2,2,2,4,4 };
+            var re_duplicate = new RemoveDuplicates();
+            var result = re_duplicate.RemoveDuplicatesNumber(nums);
+            Console.WriteLine(result);
+            for (int u = 0; u < nums.Length; u++)
+            {
+                Console.WriteLine(nums[u]);
+            }
+
+            //most profit
+            int[] prices = new int[] { 7, 1, 5, 3, 6, 4 };
+            var profit = new MostProfitInStock();
+            var max_profit = profit.MaxProfit(prices);
+            Console.WriteLine("\n  Most profit in stock for the bellow prices is : \n" + max_profit);
+            
+            for (int j = 0; j< prices.Length; j++)
+            {
+                Console.Write(prices[j] + " ");
+
+            }
+            var y = 0;
+
         }
 
     }
