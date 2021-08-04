@@ -65,6 +65,12 @@ namespace Practice_Algorithm
                 Console.Write(prices[j] + " ");
 
             }
+
+            // has Douplicate?
+            int[] arr = new int[] { 7, 5, 5, 3, 6, 4 };
+            var checker = new CheckDuplicate();
+            var IsDuplicate = checker.ContainsDuplicate(arr);
+            Console.WriteLine("\n Dose array contain duplicate? : " + IsDuplicate);
             var y = 0;
 
         }
