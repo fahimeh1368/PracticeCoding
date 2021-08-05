@@ -13,7 +13,7 @@ namespace Practice_Algorithm
         {
             int[] array = new int[] { 1, 2, 3, 4, 5, 6, 7 };
             
-            var rotate = new RotateArray();
+            var rotate = new ArrayHelper();
             var right = rotate.RotateRight(array, 3);
             Console.WriteLine("Right rotaton is: ");
             for (int i = 0; i < right.Length; i++)
@@ -71,6 +71,11 @@ namespace Practice_Algorithm
             var checker = new CheckDuplicate();
             var IsDuplicate = checker.ContainsDuplicate(arr);
             Console.WriteLine("\n Dose array contain duplicate? : " + IsDuplicate);
+            int[] nums1 = new int[] { 4,9,5};
+            int[] nums2 = new int[] { 9,4,9,8,4 };
+            var helper = new ArrayHelper();
+            var t = helper.Intersect(nums1, nums2);
+            
             var y = 0;
 
         }
